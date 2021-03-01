@@ -24,7 +24,9 @@ app.delete("/users/deleteUser/:id", async (req, res) => {
     res.status(200).json({success:true})
 });
 
-
+app.get("/", async (req, res) => {
+    res.status(200).json({success:true})
+});
 
 
 app.listen(1337, ()=> console.log('sever is running on port 1337'));
