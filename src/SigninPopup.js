@@ -7,6 +7,18 @@ class SigninPopup extends Component {
     this.props.toggle(); 
   };
 
+  signinPost = () => {
+    // let data = {user : $.trim($('#signin-creds').val()), pw: $.trim($('#signin-password').val())};
+    // $.ajax({
+    //   type: 'POST', 
+    //   url: '', 
+    //   data: data, 
+    //   success: function(data) {
+    //     console.log(data);
+    //   }
+    // });
+  }
+
   render() {
     return ( 
       <div>
@@ -20,7 +32,7 @@ class SigninPopup extends Component {
             <p class="popup-contents"> Password <a href="#" id="forgot-password"> Forgot Password? </a></p>
             <input type="text" id="signin-password" name="password" placeholder="Password" class="text-fields dropshadow"/>
           </form>
-          <button id="signin-popup-button" class="navbar-buttons dropshadow"> Sign in </button>
+          <button id="signin-popup-button" class="navbar-buttons dropshadow" onClick = {this.signinPost}> Sign in </button>
         </div>
       </div>
     )
