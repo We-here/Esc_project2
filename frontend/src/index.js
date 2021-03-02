@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
@@ -6,11 +6,7 @@ import Navbar1 from './Navbar1';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
-  <div>
-    <Navbar1 />
-    <App />
-  </div>,
-  
+  <App />,
   document.getElementById('root')
 );
 
