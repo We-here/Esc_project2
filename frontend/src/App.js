@@ -1,5 +1,5 @@
 //import logo from './logo.svg';
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 import NavBar1 from './Navbar1';
@@ -46,7 +46,7 @@ function App() {
         <NavBar2/>
       )}
       {(loginState.login == false) ? (
-        <Home/>
+        <Home changeLogin={changeLogin}/>
       ) : (
         <Search/>
       )}
