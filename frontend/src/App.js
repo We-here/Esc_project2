@@ -3,10 +3,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './App.css';
 //import { Link } from './react-router';
+import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Navbar1 from './Navbar1';
+import Home from './pages/Home';
+import User from './pages/User';
+import Signup from './pages/Signup';
 
 function App() {
 
   return (
+    <Router>
     <div className="App">
       {/* <div className="App-header">
         
@@ -24,8 +30,14 @@ function App() {
         </a>
         
       </div> */}
-      <h1>Insert other app content here</h1>
+      <Navbar1/>
+        <Switch>
+          <Route exact path="/" component={Home}/>
+          <Route exact path="/signup" component={Signup}/>
+          <Route path="/user" component={User}/>
+        </Switch>
     </div>
+    </Router>
   );
 }
 
