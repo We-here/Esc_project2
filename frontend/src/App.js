@@ -4,10 +4,12 @@ import ReactDOM from 'react-dom';
 import './App.css';
 //import { Link } from './react-router';
 import { BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import Navbar1 from './Navbar1';
+import Navbar_custom from './components/Nav';
 import Home from './pages/Home';
 import User from './pages/User';
 import Signup from './pages/Signup';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 function App() {
 
@@ -30,7 +32,7 @@ function App() {
         </a>
         
       </div> */}
-      <Navbar1/>
+        <Navbar_custom/>
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/signup" component={Signup}/>
