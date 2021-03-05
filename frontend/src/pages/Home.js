@@ -15,7 +15,7 @@ class Home extends Component {
         date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate() + ' ' +  today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
         for (let i = 0; i < 1200; i++) {
             post.push({
-                title: "post " + i,
+                title: "Event " + i,
                 description: "Random"
             });
         }
