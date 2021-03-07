@@ -13,7 +13,7 @@ function createUser(user){
 function deleteUser(id){
     return knex("Users").where("id", id).del();
 };
-
+ 
 function updateUser(id, user){
     return knex("Users").where("id", id).update(user);
 };
